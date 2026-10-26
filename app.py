@@ -8,8 +8,8 @@ DernerWebsiteStack(
     app,
     "DernerWebsiteStack",
     env=cdk.Environment(
-        account='123456789012',
-        region='us-east-1'
+        account='306403888274',
+        region='eu-west-2'
     ),
 )
 
