@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: 'Courier Prime';
+  background-color: #f3e4ae;
+  color: #0f2f18;
+}
+
+.brand {
+  color: #c96516;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 15px;
+  column-gap: 15px;
+  align-items: center;
+}
+
+img {
+  width: 600px;
+  max-width: 100%;
+}
+
+.statement {
+  height: 100vh;
+  background-image: url("./imgs/backgrounds/signature-big.webp");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
