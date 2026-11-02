@@ -2,6 +2,9 @@
 
 body {
   font-family: 'Courier Prime';
+  font-size: 1.5em;
+  text-align: justify;
+  text-justify: inter-word;
   background-color: #f3e4ae;
   color: #0f2f18;
 }
