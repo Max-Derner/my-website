@@ -21,10 +21,11 @@ body {
   row-gap: 15px;
   column-gap: 15px;
   align-items: center;
+
 }
 
 img {
-  width: 600px;
+  max-height: 100%;
   max-width: 100%;
 }
 
