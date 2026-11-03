@@ -14,3 +14,6 @@ It's not changing the world and it's not complicated.
 - Justfile for build scripts
 - CDK for IaC
 - pip for package management
+
+## Docs
+Additional documentation can be found in [`./docs/`](./docs/)
