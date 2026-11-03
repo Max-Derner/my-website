@@ -1,8 +1,8 @@
 import aws_cdk as cdk
 
-from derner_website.hosted_zone_stack import HostedZoneStack
-from derner_website.cert_stack import CertStack
-from derner_website.website_stack import WebsiteStack
+from infrastructure.hosted_zone_stack import HostedZoneStack
+from infrastructure.cert_stack import CertStack
+from infrastructure.website_stack import WebsiteStack
 
 
 london = cdk.Environment(region='eu-west-2')
