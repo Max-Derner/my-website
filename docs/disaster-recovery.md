@@ -93,10 +93,10 @@ In order for HTTPS to work, we need a TLS certificate. It's easiest to verify vi
 ## 4 Deploy remaining infrastructure
 
 This is not a "draw the rest of the owl" situation, this is a "cross your 't's and dot your 'i's" scenarios. We have the complicated mess of domains, traffic routing and certificates sorted. We just need somewhere to actually host the website (which is done with S3 + Cloudfront).  
-So just run `cdk deploy website-stack`. **N.B.** if the bucket already exists, just delete it. Now this deployment will take a significant amount of time as the Cloudfront CDN creation hangs while the edge locations populate. So again, make sure you've got some fresh credentials if possible.
+So just run `just deploy-infra`, this just recipe deploys all stacks (of which only one remains to be deployed) but crucially it outputs the CDK Stack outputs to a file that can be then be read back. **N.B.** if the bucket already exists, just delete it. Now this deployment will take a significant amount of time as the Cloudfront CDN creation hangs while the edge locations populate. So again, make sure you've got some fresh credentials if possible.
 
 
 ## 5 Publish the website
 
 Finally, it's time to publish the website.  
-First, we need a quick preflight check. The previous deployment will have created a Cloudfront distribution and given it's ID as an output. Copy that ID and replace the ID in the Justfile. Then you simply need to run the command `deploy-site`
+Simply run `just publish-site`. This will pick up the stack outputs, automatically detecting the bucket name and cloudfront distribution id.
